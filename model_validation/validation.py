@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 from sklearn.inspection import permutation_importance
 
 def plots_regressao(model,X_test,y_test):
-        y_pred=model.predict(X_test)
+    y_pred=model.predict(X_test)
     def evaluation_metrics():
         
         r2 = r2_score(y_test, y_pred)
